@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOTTA Cafe - Tempat Nongkrong Anak Muda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e48e4a0-17e0-40f0-9f96-5675838d26ae.png');
+            height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="text-purple-600 font-bold text-2xl">YOTTA</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-purple-600 font-medium">Home</a>
+                    <a href="#menu" class="text-gray-600 hover:text-purple-600">Menu</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600">About Us</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-500">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image flex items-center justify-center">
+        <div class="text-center px-4">
+            <h1 class="text-white text-4xl md:text-6xl font-bold mb-4">YOTTA CAFE</h1>
+            <p class="text-white text-xl mb-8">Tempat nongkrong kekinian anak muda dengan vibes yang ✨YOTTA✨</p>
+            <a href="#menu" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                Lihat Menu
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Signature Menu</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pilihan menu kekinian yang bikin nongkrong di YOTTA makin seru</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="menu-item bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2fe67074-f8bb-450e-8528-7320820f87d5.png" alt="Rainbow latte dengan susu berwarna-warni dalam gelas bening di atas meja kayu dengan background cafe modern" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Rainbow Latte</h3>
+                        <p class="text-gray-600 mb-4">Espresso dengan susu berlapis warna-warni</p>
+                        <span class="text-purple-600 font-bold">Rp 35.000.000.00</span>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="menu-item bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/04f01d0b-c672-4550-9bdc-29268a59ef2b.png" alt="Croissant coklat dengan topping almond dan gula halus disajikan di piring keramik putih" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Yotta Croissant</h3>
+                        <p class="text-gray-600 mb-4">Croissant isi coklat dengan topping almond</p>
+                        <span class="text-purple-600 font-bold">Rp 28.000.000.00</span>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 3 -->
+                <div class="menu-item bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/23657172-9a5c-4dbe-874b-c29117ed2f0b.png" alt="Ice matcha dengan whipped cream dan topping biskuit di gelas tinggi dengan sedotan metal" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Matcha Yotta</h3>
+                        <p class="text-gray-600 mb-4">Matcha premium dengan whipped cream premium</p>
+                        <span class="text-purple-600 font-bold">Rp 42.000.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="text-purple-600 font-medium hover:text-purple-800">Lihat Menu Lengkap →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d38fb8a8-6473-435b-a853-b21fdd9eb210.png" alt="Interior cafe YOTTA dengan meja kayu, lampu gantung industrial, dan tanaman hias dengan anak muda sedang bekerja di laptop" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About YOTTA</h2>
+                    <p class="text-gray-600 mb-4">YOTTA adalah cafe kekinian yang dibuat khusus untuk para anak muda yang ingin tempat nongkrong asik dengan WiFi kencang, musik chill, dan makanan/minuman yang instagramable.</p>
+                    <p class="text-gray-600 mb-8">Kami hadir dengan konsep "You Only Taste The Aesthetic" dimana setiap menu tidak hanya enak tapi juga fotogenic untuk feed social media kamu!</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-purple-600 text-white p-4 rounded-lg text-center w-1/3">
+                            <i class="fas fa-wifi text-2xl mb-2"></i>
+                            <p>Free WiFi</p>
+                        </div>
+                        <div class="bg-purple-600 text-white p-4 rounded-lg text-center w-1/3">
+                            <i class="fas fa-plug text-2xl mb-2"></i>
+                            <p>Power Outlet</p>
+                        </div>
+                        <div class="bg-purple-600 text-white p-4 rounded-lg text-center w-1/3">
+                            <i class="fas fa-music text-2xl mb-2"></i>
+                            <p>Chill Music</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Visit Us</h2>
+                <p class="text-gray-600">Kami buka setiap hari dari jam 10.00 - 22.00</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Lokasi</h3>
+                        <address class="text-gray-600 mb-6 not-italic">
+                            <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-purple-600"></i> Jl. daeng tata</p>
+                            <p><i class="fas fa-phone-alt mr-2 text-purple-600"></i> (+62) 811 8787 654</p>
+                        </address>
+                        
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-8">Social Media</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white hover:bg-purple-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white hover:bg-purple-700 transition">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white hover:bg-purple-700 transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Kirim Pesan</h3>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Your Name" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" placeholder="Your Email" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                            </div>
+                            <div class="mb-4">
+                                <textarea placeholder="Your Message" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 h-32"></textarea>
+                            </div>
+                            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-purple-400 font-bold text-2xl">YOTTA</span>
+                    <p class="mt-2 text-gray-400">You Only Taste The Aesthetic</p>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    <p>© 2023 YOTTA Cafe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.querySelector('button.md\\:hidden');
+        const menuItems = document.querySelector('.hidden.md\\:flex');
+        
+        menuButton.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
